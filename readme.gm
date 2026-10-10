@@ -1,0 +1,66 @@
+# 🎓 Student Grade Calculator
+
+A simple and responsive web application that calculates student marks, percentage, grades, and pass/fail status using HTML, CSS, and JavaScript.
+
+## ✨ Features
+
+* Enter marks for five subjects.
+* Calculate total marks out of 500.
+* Calculate overall percentage.
+* Automatically assign a grade.
+* Display pass/fail status based on subject-wise marks.
+* Reset marks and results easily.
+* Responsive and attractive user interface.
+* Input validation for marks between 0 and 100.
+
+## 🛠️ Technologies Used
+
+* **HTML5** – Website structure
+* **CSS3** – Styling and responsive design
+* **JavaScript** – Calculations and result validation
+
+## 📂 Project Structure
+
+```text
+Student-Grade-Calculator/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## 🚀 How to Run
+
+1. Download or clone this repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` in your browser, or use the Live Server extension.
+4. Enter marks for all five subjects.
+5. Click **Calculate Result** to view the total, percentage, grade, and result.
+
+## 📊 Grading Criteria
+
+| Percentage                 | Grade    |
+| -------------------------- | -------- |
+| 90% and above              | A+       |
+| 80%–89.99%                 | A        |
+| 70%–79.99%                 | B        |
+| 60%–69.99%                 | C        |
+| 50%–59.99%                 | D        |
+| Below 50%                  | E        |
+| Any subject below 33 marks | F (Fail) |
+
+A student must score at least 33 marks in every subject to pass.
+
+## 🎯 Project Objective
+
+The objective of this project is to practice frontend development, JavaScript fundamentals, form handling, input validation, and basic conditional logic.
+
+## 👨‍💻 Author
+
+**Arpit Kumar**
+
+A beginner-friendly project developed for learning and practicing web development.
+
+---
+
+If you find this project useful, feel free to ⭐ the repository!

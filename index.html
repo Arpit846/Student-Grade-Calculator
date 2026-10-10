@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <div class="logo">🎓</div>
+            <h1>Student Grade Calculator</h1>
+            <p>Enter your marks and discover your result!</p>
+        </header>
+
+        <section class="card">
+            <h2>📝 Enter Subject Marks</h2>
+
+            <form id="marksForm">
+                <div class="field">
+                    <label for="maths">Mathematics</label>
+                    <input type="number" id="maths"
+                        min="0" max="100" step="any"
+                        placeholder="Out of 100" required>
+                </div>
+
+                <div class="field">
+                    <label for="physics">Physics</label>
+                    <input type="number" id="physics"
+                        min="0" max="100" step="any"
+                        placeholder="Out of 100" required>
+                </div>
+
+                <div class="field">
+                    <label for="chemistry">Chemistry</label>
+                    <input type="number" id="chemistry"
+                        min="0" max="100" step="any"
+                        placeholder="Out of 100" required>
+                </div>
+
+                <div class="field">
+                    <label for="english">English</label>
+                    <input type="number" id="english"
+                        min="0" max="100" step="any"
+                        placeholder="Out of 100" required>
+                </div>
+
+                <div class="field">
+                    <label for="computer">Computer Science</label>
+                    <input type="number" id="computer"
+                        min="0" max="100" step="any"
+                        placeholder="Out of 100" required>
+                </div>
+
+                <button type="submit">Calculate Result ✨</button>
+                <button type="reset" class="reset-btn">
+                    Reset Marks
+                </button>
+            </form>
+        </section>
+
+        <section class="card result-card"
+            id="result" aria-live="polite" hidden>
+            <h2>📊 Your Result</h2>
+
+            <div class="percentage-circle" id="circle">
+                <strong id="percentage">0%</strong>
+                <span>Percentage</span>
+            </div>
+
+            <div class="stats">
+                <div class="stat">
+                    <span>Total Marks</span>
+                    <strong id="total">0 / 500</strong>
+                </div>
+
+                <div class="stat">
+                    <span>Grade</span>
+                    <strong id="grade">-</strong>
+                </div>
+            </div>
+
+            <div class="status" id="status">
+                Result will appear here
+            </div>
+
+            <div id="message" class="message"></div>
+        </section>
+
+        <footer>
+            Made with ❤️ using HTML, CSS & JavaScript
+        </footer>
+    </main>
+</body>
+</html>

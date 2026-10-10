@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #202b46;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.logo {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 18px;
+    margin-bottom: 22px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 22px;
+    color: #3949ab;
+}
+
+.field {
+    margin-bottom: 17px;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 7px;
+    font-size: 14px;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #d5dced;
+    border-radius: 9px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.field input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px #667eea25;
+}
+
+button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #5267e8, #8247c7);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+.reset-btn {
+    background: #eef0f8;
+    color: #3949ab;
+    margin-top: 10px;
+}
+
+.result-card {
+    text-align: center;
+}
+
+.percentage-circle {
+    width: 150px;
+    height: 150px;
+    border: 10px solid #38c987;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.percentage-circle strong {
+    font-size: 30px;
+    color: #168354;
+}
+
+.percentage-circle span {
+    font-size: 13px;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.stat {
+    padding: 17px;
+    background: #edf1ff;
+    border-radius: 12px;
+}
+
+.stat span {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.stat strong {
+    font-size: 21px;
+    color: #3949ab;
+}
+
+.status {
+    padding: 15px;
+    border-radius: 10px;
+    background: #e0f8eb;
+    color: #168354;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.status.fail {
+    background: #ffe6e6;
+    color: #c62828;
+}
+
+.message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #59647c;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    padding: 10px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 450px) {
+    .header h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 19px;
+    }
+
+    .stat strong {
+        font-size: 18px;
+    }
+}
